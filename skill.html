@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href=".css">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'poppins',sans-serif;
+        }
+        body{
+            background-color: black;
+        }
+        h2{
+            color: aliceblue;
+            align-items: center;
+            text-align: center;
+        }
+        nav{
+            display: flex;
+            width: 100%;
+            justify-content: right;
+            height: 80px;
+            line-height: 80px;
+            z-index: 111;
+        }
+        .navItems{
+            display: flex;
+        }
+        .navItems li{
+            list-style: none;
+            margin: 0 15px;
+        }
+        .navItems li a{
+            background: linear-gradient(to right, rgba(100, 200, 200, 1), rgba(100, 200, 200, 1)),
+            linear-gradient(to right, rgba(255, 0, 0, 1), rgba(255, 0, 0, 1), rgba(0, 100, 200, 1));
+            background-size: 100% 3px, 0 3px;
+            background-position: 100% 100%, 0 100%;
+            background-repeat: no-repeat;
+            transition: background-size 400ms;
+            color: #c2c2c2;
+            font-weight: 900;
+            text-transform: capitalize;
+            letter-spacing: 3px;
+            padding: 5px;
+            text-decoration: none;
+        }
+        .navItems li:hover a{
+            background-size: 0 3px, 100% 3px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <ul class="navItems">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="skill.html">Skill</a></li>
+                <li><a href="hobbies.html">Hobbies</a></li>
+            </ul> 
+        </nav>
+    </div>
+    <div class="skill">
+        <h2>My Skills</h2>
+    </div>
+</body>
+</html>

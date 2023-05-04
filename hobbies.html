@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            font-family: 'poppins',sans-serif;
+        }
+        body{
+            background-color: black;
+        }
+        h3{
+            color: aliceblue;
+            align-items: center;
+            text-align: center;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            text-transform: capitalize;
+            margin: 5em;
+        }
+        nav{
+            display: flex;
+            width: 100%;
+            justify-content: right;
+            height: 80px;
+            line-height: 80px;
+            z-index: 111;
+        }
+        .navItems{
+            display: flex;
+        }
+        .navItems li{
+            list-style: none;
+            margin: 0 15px;
+        }
+        .navItems li a{
+            background: linear-gradient(to right, rgba(100, 200, 200, 1), rgba(100, 200, 200, 1)),
+            linear-gradient(to right, rgba(255, 0, 0, 1), rgba(255, 0, 0, 1), rgba(0, 100, 200, 1));
+            background-size: 100% 3px, 0 3px;
+            background-position: 100% 100%, 0 100%;
+            background-repeat: no-repeat;
+            transition: background-size 400ms;
+            color: #c2c2c2;
+            font-weight: 900;
+            text-transform: capitalize;
+            letter-spacing: 3px;
+            padding: 5px;
+            text-decoration: none;
+        }
+        .navItems li:hover a{
+            background-size: 0 3px, 100% 3px;
+        }
+        p{
+            color: #c2c2c2;
+            margin-left: 40em;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: 400;
+        }
+        img{
+            position: absolute;
+            width: 80vh;
+            height: 50vh;
+            margin-left: 5em;
+
+        }
+        h2{
+            color: #c2c2c2;
+            margin-left: 30em;
+            margin-top: 5em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <ul class="navItems">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="skill.html">Skill</a></li>
+                <li><a href="hobbies.html">Hobbies</a></li>
+            </ul> 
+        </nav>
+    </div>
+
+    <div class="container">
+        <h3>What are my hobbies?</h3>
+
+    </div>
+
+    <div class="games">
+        <p>My favorite thing to do when i have a free time is playing computer games which is League of Legends, I'm playing this game for about 8 years.</p>
+
+        <img src="LoL_whatis_image.jpg">
+
+        <h2>About League of legends</h2>
+
+        <section class="league">
+            <p>League of Legends has been the most played game in the world since 2012. Riot Games has held control over the online gaming scene for over half a decade. If you identify as a gamer, then you have defenitely heard of Lol. League of Legends is a complete game that has a steep learning curve, but with knowledge comes power. League of Legends is often categorized as a MOBA, or multiplayer online battle arena, but League has a lot different genre elements. MOBA's typically haveRTS, or real-time strategy, components throughout the game. In a nutshell, League of Legends can be described as a MOBA that has two teams, five players each, fight against each other wiht an objective in mind. MOBA's like League of Legends, often require more dexterity and strategy than lightning-fast trgger finger reactions.
+            </p>
+        </section>
+    </div>
+</body>
+</html>

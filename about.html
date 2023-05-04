@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'poppins',sans-serif;
+        }
+        body{
+            background-color: black;
+        }
+        h3{
+            color: aliceblue;
+            align-items: center;
+            text-align: center;
+        }
+        nav{
+            display: flex;
+            width: 100%;
+            justify-content: right;
+            height: 80px;
+            line-height: 80px;
+            z-index: 111;
+        }
+        .navItems{
+            display: flex;
+        }
+        .navItems li{
+            list-style: none;
+            margin: 0 15px;
+        }
+        .navItems li a{
+            background: linear-gradient(to right, rgba(100, 200, 200, 1), rgba(100, 200, 200, 1)),
+            linear-gradient(to right, rgba(255, 0, 0, 1), rgba(255, 0, 0, 1), rgba(0, 100, 200, 1));
+            background-size: 100% 3px, 0 3px;
+            background-position: 100% 100%, 0 100%;
+            background-repeat: no-repeat;
+            transition: background-size 400ms;
+            color: #c2c2c2;
+            font-weight: 900;
+            text-transform: capitalize;
+            letter-spacing: 3px;
+            padding: 5px;
+            text-decoration: none;
+        }
+        .navItems li:hover a{
+            background-size: 0 3px, 100% 3px;
+        }
+        h2{
+            color: #c2c2c2;
+            font-size: 20px;
+            align-items: center;
+            text-align: center;
+            margin: 5em;
+        }
+        p{
+            color: #c2c2c2;
+        }
+        .me p{
+            color: rgb(226, 221, 221);
+            margin-left: 38em;
+            font-size: 17px;
+            letter-spacing: 1px;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: 400;
+        }
+        img{
+            position: absolute;
+            height: 35rem;
+            width: 20em;
+            margin-left: 10em;
+            border-radius: 5px;
+        }
+        .img2{
+            position: absolute;
+            margin-left: 23em;
+            margin-top: 10em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <ul class="navItems">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="skill.html">Skill</a></li>
+                <li><a href="hobbies.html">Hobbies</a></li>
+            </ul> 
+        </nav>
+    </div>
+
+    <div class="abt">
+        <h2>About Me.</h2>
+        
+        <div class="me">
+
+            <img src="1682664306800.jpg">
+
+            <p> I am Joseph Gildo from Poblacion, Tayum Abra, I currently third year college student taking Bachelor of Science in Information Technology at University of Abra Lagangilang Main Campus. I finished my gradeschool at Tayum Central School in Tayum Abra and my in high school I graduated at Holy Ghost School.</p>
+        </div>
+    </div>
+</body>
+</html>
