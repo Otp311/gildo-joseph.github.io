@@ -72,16 +72,24 @@
         }
         img{
             position: absolute;
-            height: 35rem;
-            width: 20em;
             margin-left: 10em;
-            border-radius: 5px;
+            border-radius: 10px;
+            width: 300px;
+            transform: translateX(0px);
+            animation: float 6s ease-out infinite;
         }
-        .img2{
-            position: absolute;
-            margin-left: 23em;
-            margin-top: 10em;
+        @keyframes float {
+            0%{
+                transform: translateY(0px);
+            }
+            50%{
+                transform: translateY(-60px);
+            }
+            100%{
+                transform: translateY(0px);
+            }
         }
+        
     </style>
 </head>
 <body>
@@ -90,8 +98,8 @@
             <ul class="navItems">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="skill.html">Skill</a></li>
-                <li><a href="hobbies.html">Hobbies</a></li>
+                <li><a href="skill.html">Activities</a></li>
+                <li><a href="hobbies.html">Skills</a></li>
             </ul> 
         </nav>
     </div>
